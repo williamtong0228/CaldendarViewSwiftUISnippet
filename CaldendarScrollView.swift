@@ -4,6 +4,8 @@ struct CalendarScrollView: View {
     @EnvironmentObject var sharing:SharedValues
     @EnvironmentObject var chartVM:ChartViewModel
     @EnvironmentObject var calendarEvent:CalendarEventManager
+    let calendarEndDays = 7
+    let calendarStartDays = 7
     var body: some View {
         ScrollView{
             CalendarView(interval: DateInterval(start:Date().addingTimeInterval(TimeInterval(-60 * 60 * 24 * calendarStartDays)),
