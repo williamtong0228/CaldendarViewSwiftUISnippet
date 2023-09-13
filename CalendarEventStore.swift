@@ -22,9 +22,9 @@ class CalendarEventManager:ObservableObject{
             
           var myId = 0
             
-          for i in 0...Int(calendarEndDays){
+          for i in 0...calendarEndDays{
             
-            let idx = Int(calendarEndDays) - i
+            let idx = calendarEndDays - i
                 
               //...    
               //...
